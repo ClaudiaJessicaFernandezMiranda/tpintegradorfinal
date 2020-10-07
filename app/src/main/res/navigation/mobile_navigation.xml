@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.tpintegradorfinal.ui.inicio.InicioFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/inicio_fragment" />
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.example.tpintegradorfinal.ui.perfil.PerfilFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/perfil_fragment" />
+
+    <fragment
+        android:id="@+id/nav_inmuebles"
+        android:name="com.example.tpintegradorfinal.ui.inmueble.InmuebleFragment"
+        android:label="@string/menu_inmuebles"
+        tools:layout="@layout/inmueble_fragment" />
+
+    <fragment
+        android:id="@+id/nav_inquilinos"
+        android:name="com.example.tpintegradorfinal.ui.inquilino.InquilinoFragment"
+        android:label="@string/menu_inquilinos"
+        tools:layout="@layout/inquilino_fragment" />
+
+    <fragment
+        android:id="@+id/nav_pago"
+        android:name="com.example.tpintegradorfinal.ui.pago.PagoInmueblesFragment"
+        android:label="@string/menu_inmuebles"
+        tools:layout="@layout/pago_inmuebles_fragment" />
+
+    <fragment
+        android:id="@+id/nav_alquiler"
+        android:name="com.example.tpintegradorfinal.ui.alquiler.AlquilerInmueblesFragment"
+        android:label="@string/menu_inmuebles"
+        tools:layout="@layout/alquiler_inmueble_fragment" />
+
+   </navigation>

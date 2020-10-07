@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">ClaudiaInmobiliaria</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!--Activity-->
+    <string name="activity_modificar_inmueble">Modificando Inmueble</string>
+    <string name="activity_modificar_inquilino">Modificando Inquilino</string>
+    <string name="activity_modificar_alquiler">Modificando Alquiler</string>
+    <!--Activity-->
+
+    <!--Acciones-->
+    <string name="action_settings">Settings</string>
+    <string name="action_agregar_inmueble">Agregando Inmueble</string>
+    <string name="action_agregar_iquilino">Agregando Inquilino</string>
+    <string name="action_agregar_alquiler">Agregando Alquiler</string>
+    <string name="action_agregar_pago">Agregando Pago</string>
+    <string name="action_opciones">Opciones</string>
+    <!--Acciones-->
+
+    <!--Menu-->
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_login">Inicio de sesion</string>
+    <string name="menu_perfil">Su Perfil</string>
+    <string name="menu_inmuebles">Sus Inmuebles</string>
+    <string name="menu_inquilinos">Inquilinos</string>
+    <string name="menu_pagos">Pagos Realizados</string>
+    <string name="menu_alquiler">Sus Contratos</string>
+    <!--Menu-->
+
+    <!--Login-->
+    <string name="login_dni">DNI</string>
+    <string name="login_apellido">Apellido</string>
+    <string name="login_nombre">Nombre</string>
+    <string name="login_telefono">Teléfono</string>
+    <string name="login_tipo_tel">Movil</string>
+    <string name="login_email">Correo Electrónico</string>
+    <string name="login_clave">Contraseña</string>
+    <string name="login_boton_ingresar">Ingresar</string>
+    <string name="login_boton_registrarse">Registrar</string>
+    <string name="title_activity_login_tab">LoginTab</string>
+    <!--Login-->
+
+    <!--Perfil-->
+    <string name="perfil_boton_modificar">Modificar</string>
+    <string name="perfil_boton_habilitar">Editar</string>
+    <!--Perfil-->
+
+    <!--Inmueble-->
+    <string name="inmueble_dueño">Propietario: Apellido Nombre</string>
+    <string name="inmueble_inquilino">Inquilino: Apellido Nombre</string>
+    <string name="inmueble_direccion">Dirección</string>
+    <string name="inmueble_ambientes">Ambientes</string>
+    <string name="inmueble_tipo">Tipo</string>
+    <string name="inmueble_uso">Uso</string>
+    <string name="inmueble_precio">Precio</string>
+    <string name="inmueble_disponible">Disponibilidad</string>
+    <string name="inmueble_fijado">Inmueble</string>
+    <!--Inmueble-->
+
+    <!--Inquilino-->
+    <string name="inquilino_fijado">Inquilino</string>
+    <string name="inquilino_nombreape">Nombre y Apellido</string>
+    <!--Inquilino-->
+    <string name="pago_nro_pago">Numero de pago</string>
+    <string name="pago_fecha">Fecha del pago</string>
+    <string name="pago_importe">Importe</string>
+    <!--Pago-->
+
+
+    <!--Pago-->
+    <!--Alquiler-->
+    <string name="alquiler_fechainicio">Fecha Inicial</string>
+    <string name="alquiler_fechafin">Fecha Final</string>
+    <string name="agregar">Agregar</string>
+    <!--Alquiler-->
+
+    <!--TabLogin-->
+    <string name="tab_text_1">Iniciar Sesion</string>
+    <string name="tab_text_2">Registrar</string>
+    <!--TabLogin-->
+
+    <!--Spinners-->
+    <string-array name="tipo">
+        <item>Tipo de inmueble</item>
+        <item>Edificio</item>
+        <item>Fabrica</item>
+        <item>Casa</item>
+        <item>Lote</item>
+        <item>Arbol</item>
+    </string-array>
+
+    <string-array name="uso">
+        <item>Uso del inmueble</item>
+        <item>Comercial</item>
+        <item>Hogar</item>
+        <item>Alquiler</item>
+    </string-array>
+
+    <string-array name="disponible">
+        <item>Disponibilidad</item>
+        <item>Disponible</item>
+        <item>No Disponible</item>
+    </string-array>
+    <!--Spinners-->
+
+</resources>

@@ -2,7 +2,6 @@ package com.example.tpintegradorfinal.ui.pago;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 
@@ -48,23 +47,11 @@ public class PagosDelInmuebleActivity extends AppCompatActivity {
         pdiLvPagos = findViewById(R.id.lvPagosDelInmueble);
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_pago, menu);
-        return(super.onCreateOptionsMenu(menu));
-    }
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
             case android.R.id.home:
                 finish();
-                break;
-            case R.id.action_agregar_pago:
-                intent = new Intent(this, PagoAgregarActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
                 break;
         }
 

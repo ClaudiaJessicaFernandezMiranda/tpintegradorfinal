@@ -26,7 +26,6 @@ public class InmuebleFragment extends Fragment {
     private InmuebleViewModel InmuebleVM;
     private ListView ifLvInmuebles;
     private InmuebleAdapter inmuebleAdapter;
-    private Intent intent;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.inmueble_fragment, container, false);
@@ -57,25 +56,6 @@ public class InmuebleFragment extends Fragment {
         //LLamado Al InmuebleViewModel
         InmuebleVM = ViewModelProvider.AndroidViewModelFactory.getInstance(getActivity().getApplication()).create(InmuebleViewModel.class);
         ifLvInmuebles = root.findViewById(R.id.lvInmuebles);
-    }
-
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.menu_inmueble, menu);
-        super.onCreateOptionsMenu(menu, inflater);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()) {
-            case R.id.action_agregar_inmueble:
-                intent = new Intent(getActivity(), InmuebleAgregarActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-                break;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
 }

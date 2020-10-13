@@ -2,8 +2,8 @@ package com.example.tpintegradorfinal.ui.main;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.tpintegradorfinal.ui.login.InformacionFragment;
 import com.example.tpintegradorfinal.ui.login.LoginFragment;
-import com.example.tpintegradorfinal.ui.login.RegistrarFragment;
 
 public class PlaceholderFragment extends Fragment {
 
@@ -11,7 +11,8 @@ public class PlaceholderFragment extends Fragment {
         Fragment fragment = new Fragment();
         switch (index){
             case 1: fragment = new LoginFragment(); break;
-            case 2: fragment = new RegistrarFragment(); break;
+            case 2: fragment = new InformacionFragment(); break;
+
         }
         return fragment;
     }

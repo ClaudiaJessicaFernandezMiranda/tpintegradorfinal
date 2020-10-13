@@ -19,17 +19,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.inmueble.InmuebleInfoActivity" android:label="@string/activity_modificar_inmueble" />
-        <activity android:name=".ui.inmueble.InmuebleAgregarActivity" android:label="@string/action_agregar_inmueble"/>
-
         <activity android:name=".ui.inquilino.InquilinoInfoActivity" android:label="@string/activity_modificar_inquilino" />
-        <activity android:name=".ui.inquilino.InquilinoAgregarActivity" android:label="@string/action_agregar_iquilino" />
-
         <activity android:name=".ui.alquiler.AlquilerInfoActivity" android:label="@string/activity_modificar_alquiler" />
-        <activity android:name=".ui.alquiler.AlquilerAgregarActivity" android:label="@string/action_agregar_alquiler" />
         <activity android:name=".ui.alquiler.AlquileresDelInmuebleActivity" android:label="@string/menu_alquiler" />
-
         <activity android:name=".ui.pago.PagoInfoActivity" />
-        <activity android:name=".ui.pago.PagoAgregarActivity" android:label="@string/action_agregar_pago" />
         <activity android:name=".ui.pago.PagosDelInmuebleActivity" android:label="@string/menu_pagos" />
 
         <activity

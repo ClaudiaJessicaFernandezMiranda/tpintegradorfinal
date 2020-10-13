@@ -26,7 +26,6 @@ public class InquilinoFragment extends Fragment {
     private InquilinoViewModel InquilinoVM;
     private ListView ifLvInquilino;
     private InquilinoAdapter inquilinoAdapter;
-    private Intent intent;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.inquilino_fragment, container, false);
@@ -58,25 +57,6 @@ public class InquilinoFragment extends Fragment {
         //LLamado Al InquilinoViewModel
         InquilinoVM = ViewModelProvider.AndroidViewModelFactory.getInstance(getActivity().getApplication()).create(InquilinoViewModel.class);
         ifLvInquilino = root.findViewById(R.id.lvInquilinos);
-    }
-
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.menu_inquilino, menu);
-        super.onCreateOptionsMenu(menu, inflater);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()) {
-            case R.id.action_agregar_iquilino:
-                intent = new Intent(getActivity(), InquilinoAgregarActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-                break;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
 }

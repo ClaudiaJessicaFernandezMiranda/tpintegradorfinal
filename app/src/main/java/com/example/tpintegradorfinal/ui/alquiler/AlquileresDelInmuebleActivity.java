@@ -2,7 +2,6 @@ package com.example.tpintegradorfinal.ui.alquiler;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -24,7 +23,7 @@ public class AlquileresDelInmuebleActivity extends AppCompatActivity {
     private AlquilerViewModel AlquilerVM;
     private ListView iiALvAlquiler;
     private AlquierAdapter alquilerAdapter;
-    private Intent intent;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -58,21 +57,10 @@ public class AlquileresDelInmuebleActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_alquiler, menu);
-        return(super.onCreateOptionsMenu(menu));
-    }
-
-    @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
             case android.R.id.home:
                 finish();
-                break;
-            case R.id.action_agregar_alquiler:
-                intent = new Intent(this, AlquilerAgregarActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
                 break;
         }
 

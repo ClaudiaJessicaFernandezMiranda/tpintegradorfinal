@@ -28,7 +28,7 @@ public class InmuebleInfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.inmueble_info_agregar_activity);
+        setContentView(R.layout.inmueble_info_activity);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         cargarVistas();
 
